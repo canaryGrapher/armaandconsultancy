@@ -40,7 +40,7 @@ export default function Home() {
               Your Trusted Partner in Cybersecurity & Emerging Technologies
             </h1>
             <p className="text-gray-600 max-w-md ml-3">
-              In today's digital world, security isn't optional—it's essential. At Armaand Consulting, we empower businesses with cutting-edge cybersecurity solutions, ensuring your data stays protected while you scale with confidence.
+              In today&apos;s digital world, security isn&apos;t optional—it&apos;s essential. At Armaand Consulting, we empower businesses with cutting-edge cybersecurity solutions, ensuring your data stays protected while you scale with confidence.
             </p>
             <Link href="/services">
               <button className="mt-5 px-6 py-3 bg-black text-white rounded-full">

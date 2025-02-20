@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface HeaderProps {
   activePage: 'home' | 'services' | 'contact';
@@ -13,24 +14,24 @@ export default function Header({ activePage }: HeaderProps) {
       </div>
 
       <nav className="flex gap-8">
-        <a 
+        <Link
           href="/" 
           className={`${activePage === 'home' ? 'font-bold text-black' : 'text-gray-600'} hover:text-black`}
         >
           Home
-        </a>
-        <a 
+        </Link>
+        <Link
           href="/services" 
           className={`${activePage === 'services' ? 'font-bold text-black' : 'text-gray-600'} hover:text-black`}
         >
           Services
-        </a>
-        <a 
+        </Link>
+        <Link
           href="/contact" 
           className={`${activePage === 'contact' ? 'font-bold text-black' : 'text-gray-600'} hover:text-black`}
         >
           Contact us
-        </a>
+        </Link>
       </nav>
 
       <button className="px-4 py-2 rounded-full border border-black">

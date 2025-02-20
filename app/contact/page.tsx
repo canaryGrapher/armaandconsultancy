@@ -16,7 +16,7 @@ export default function Contact() {
                     <div className="text-center mb-16">
                         <h1 className="text-5xl font-light mb-4">Get in Touch</h1>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Have questions about our services? We're here to help. Reach out to us through any of the following channels.
+                            Have questions about our services? We&apos;re here to help. Reach out to us through any of the following channels.
                         </p>
                     </div>
 
