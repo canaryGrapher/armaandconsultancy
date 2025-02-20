@@ -13,7 +13,7 @@ export default function Home() {
         <div className="flex flex-row justify-center items-center">
           <Image src={underMaintenance} alt="Under Maintenance" height={500} width={500} />
         </div>
-        <h1 className="text-4xl font-bold">
+        <h1 className="text-4xl font-bold text-center">
           Coming Soon!
         </h1>
       </main>
