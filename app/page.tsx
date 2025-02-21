@@ -21,9 +21,13 @@ import {
     thales,
     voltage
 } from "../public/images/partners/index"
+
 export const metadata = {
   title: 'Armaand Consultancy',
   description: 'Your Trusted partner in Cyber Security & Emerging technologies',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function Home() {
@@ -32,33 +36,37 @@ export default function Home() {
       <Header activePage="home" />
       {/* Hero Section */}
       <main className="px-8 py-16">
-        <div className="grid grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Right Content - Image */}
+          <div className="col-span-1 lg:col-start-2 h-[400px] lg:h-full relative">
+            <div className="relative w-full h-full bg-gradient-to-br from-purple-100 via-pink-100 to-orange-100 rounded-2xl">
+              <Image 
+                src={heroImage} 
+                alt="Hero Image" 
+                fill
+                className="object-cover rounded-2xl"
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+          </div>
+
           {/* Left Content */}
-          <div className="col-span-2 md:col-span-1 space-y-6">
-            <div className="text-sm text-gray-600">Make Technology Secure</div>
-            <h1 className="text-6xl font-light leading-tight">
+          <div className="col-span-1 lg:col-start-1 lg:row-start-1 space-y-6">
+            <div className="text-sm text-gray-600 text-center lg:text-left">Make Technology Secure</div>
+            <h1 className="text-6xl font-light leading-tight text-center lg:text-left">
               Your Trusted Partner in Cybersecurity & Emerging Technologies
             </h1>
-            <p className="text-gray-600 max-w-md ml-3">
+            <p className="text-gray-600 px-10 lg:px-0 lg:max-w-md ml-3 text-center lg:text-left">
               In today&apos;s digital world, security isn&apos;t optional—it&apos;s essential. At Armaand Consulting, we empower businesses with cutting-edge cybersecurity solutions, ensuring your data stays protected while you scale with confidence.
             </p>
-            <Link href="/services">
-              <button className="mt-5 px-6 py-3 bg-black text-white rounded-full">
+            <Link href="/services" className="flex justify-center lg:justify-start">
+              <button className="mt-5 px-6 py-3 bg-black text-white rounded-full w-2/4 lg:w-auto">
                 EXPLORE SERVICES
               </button>
             </Link>
 
-
             <StatsGrid />
-          </div>
-
-          {/* Right Content - You can add an abstract visualization or image here */}
-          <div className="flex-1 relative">
-            {/* Add your visualization or image here */}
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-100 via-pink-100 to-orange-100 rounded-2xl">
-              {/* You can add more decorative elements here */}
-              <Image src={heroImage} alt="Hero Image" className="w-full h-full object-cover" />
-            </div>
           </div>
         </div>
 
