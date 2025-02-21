@@ -4,22 +4,22 @@ import Header from "./components/Header";
 import Link from "next/link";
 import StatsGrid from "./components/StatsGrid";
 import heroImage from "../public/images/brand/hero.jpg"
-import { 
-    algoSec,
-    arcSight,
-    checkMarX,
-    crowdStrike,
-    fortify,
-    HCLAppScan,
-    microsoftSentinel,
-    okta,
-    radar,
-    recordedFuture,
-    sailpoint,
-    splunk,
-    symantec,
-    thales,
-    voltage
+import {
+  algoSec,
+  arcSight,
+  checkMarX,
+  crowdStrike,
+  fortify,
+  HCLAppScan,
+  microsoftSentinel,
+  okta,
+  radar,
+  recordedFuture,
+  sailpoint,
+  splunk,
+  symantec,
+  thales,
+  voltage
 } from "../public/images/partners/index"
 
 export const metadata = {
@@ -37,20 +37,6 @@ export default function Home() {
       {/* Hero Section */}
       <main className="px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Right Content - Image */}
-          <div className="col-span-1 lg:col-start-2 h-[300px] lg:h-full relative">
-            <div className="relative w-full h-full bg-gradient-to-br from-purple-100 via-pink-100 to-orange-100 rounded-2xl">
-              <Image 
-                src={heroImage} 
-                alt="Hero Image" 
-                fill
-                className="object-cover rounded-2xl"
-                priority
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
-          </div>
-
           {/* Left Content */}
           <div className="col-span-1 lg:col-start-1 lg:row-start-1 space-y-6">
             <div className="text-sm text-gray-600 text-center lg:text-left">Make Technology Secure</div>
@@ -67,6 +53,20 @@ export default function Home() {
             </Link>
 
             <StatsGrid />
+          </div>
+
+          {/* Right Content - Image */}
+          <div className="col-span-1 lg:col-start-2 h-[300px] lg:h-full relative">
+            <div className="relative w-full h-full bg-gradient-to-br from-purple-100 via-pink-100 to-orange-100 rounded-2xl">
+              <Image
+                src={heroImage}
+                alt="Hero Image"
+                fill
+                className="object-cover rounded-2xl"
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
         </div>
 
