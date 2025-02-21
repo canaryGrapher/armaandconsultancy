@@ -38,7 +38,7 @@ export default function Home() {
       <main className="px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Right Content - Image */}
-          <div className="col-span-1 lg:col-start-2 h-[400px] lg:h-full relative">
+          <div className="col-span-1 lg:col-start-2 h-[300px] lg:h-full relative">
             <div className="relative w-full h-full bg-gradient-to-br from-purple-100 via-pink-100 to-orange-100 rounded-2xl">
               <Image 
                 src={heroImage} 
@@ -54,14 +54,14 @@ export default function Home() {
           {/* Left Content */}
           <div className="col-span-1 lg:col-start-1 lg:row-start-1 space-y-6">
             <div className="text-sm text-gray-600 text-center lg:text-left">Make Technology Secure</div>
-            <h1 className="text-6xl font-light leading-tight text-center lg:text-left">
+            <h1 className="text-3xl lg:text-6xl font-light leading-tight text-center lg:text-left">
               Your Trusted Partner in Cybersecurity & Emerging Technologies
             </h1>
-            <p className="text-gray-600 px-10 lg:px-0 lg:max-w-md ml-3 text-center lg:text-left">
+            <p className="text-gray-600 px-2 lg:px-0 lg:max-w-md text-center lg:text-left">
               In today&apos;s digital world, security isn&apos;t optional—it&apos;s essential. At Armaand Consulting, we empower businesses with cutting-edge cybersecurity solutions, ensuring your data stays protected while you scale with confidence.
             </p>
             <Link href="/services" className="flex justify-center lg:justify-start">
-              <button className="mt-5 px-6 py-3 bg-black text-white rounded-full w-2/4 lg:w-auto">
+              <button className="mt-5 px-6 py-3 bg-black text-white rounded-full w-3/4 lg:w-auto">
                 EXPLORE SERVICES
               </button>
             </Link>
@@ -73,7 +73,7 @@ export default function Home() {
         {/* Partners/Solutions Section */}
         <section className="mt-24">
           <h2 className="text-3xl font-light text-center mb-12">Our Expertise</h2>
-          <div className="grid grid-cols-5 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {[
               { img: algoSec, name: 'AlgoSec' },
               { img: arcSight, name: 'ArcSight' },
